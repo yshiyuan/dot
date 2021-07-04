@@ -81,7 +81,6 @@ source $ZSH/oh-my-zsh.sh
 # export MANPATH="/usr/local/man:$MANPATH"
 export PATH="$HOME/bin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
-export LD_LIBRARY_PATH=$HOME/software/protobuf-2.5.0/src/.libs:$LD_LIBRARY_PATH
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -105,14 +104,15 @@ export LD_LIBRARY_PATH=$HOME/software/protobuf-2.5.0/src/.libs:$LD_LIBRARY_PATH
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias rg="ranger"
-alias ym=/usr/bin/rm
-alias rm='_yrm(){mv $@ ~/.ytrash};_yrm'
+#alias ym=/usr/bin/rm
+#alias rm='_yrm(){mv $@ ~/.ytrash};_yrm'
 
 #---BEGIN wsl config---
 #use v2ray proxy
 export windows_host=`cat /etc/resolv.conf|grep nameserver|awk '{print $2}'|head -1`
 #wsl2 use windwos_host
-export ALL_PROXY=socks5://$windows_host:10808
+#export ALL_PROXY=socks5://$windows_host:10808
+export ALL_PROXY=http://$windows_host:10809
 #export ALL_PROXY=socks5://127.0.0.1:10808
 export HTTP_PROXY=$ALL_PROXY
 export http_proxy=$ALL_PROXY
@@ -123,3 +123,9 @@ if [ "`git config --global --get proxy.https`" != "socks5://$windows_host:10808"
             git config --global proxy.https socks5://$windows_host:10808
 fi
 #---END wsl config---
+
+git config --global core.quotepath false          # 显示 status 编码
+git config --global gui.encoding utf-8            # 图形界面编码
+git config --global i18n.commit.encoding utf-8    # 提交信息编码
+git config --global i18n.logoutputencoding utf-8  # 输出 log 编码
+export LESSCHARSET=utf-8                          # 因为git log默认使用 less 分页，所以需要 bash 对 less 命令进行 utf-8 编码
