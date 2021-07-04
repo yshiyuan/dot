@@ -120,7 +120,7 @@ export HTTPS_PROXY=$ALL_PROXY
 export https_proxy=$ALL_PROXY
 
 if [ "`git config --global --get proxy.https`" != "socks5://$windows_host:10808" ]; then
-            git config --global proxy.https socks5://$windows_host:10808
+    git config --global proxy.https socks5://$windows_host:10808
 fi
 #---END wsl config---
 
