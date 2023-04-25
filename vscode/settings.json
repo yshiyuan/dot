@@ -1,0 +1,176 @@
+{
+  "terminal.integrated.profiles.linux": {
+    "zsh": {
+      "path": "/usr/bin/zsh"
+    },
+  },
+  "terminal.integrated.defaultProfile.linux": "zsh",
+  "python.defaultInterpreterPath": "/usr/bin/python3",
+  "python.analysis.typeCheckingMode": "basic",
+  "python.languageServer": "Pylance",
+  "editor.semanticTokenColorCustomizations": {
+    "enabled": true,
+    "rules": {
+      "parameter": "#306b72",
+      "class": {
+        "fontStyle": "bold",
+        "foreground": "#729de3"
+      },
+      "type.fileScope": {
+        "fontStyle": "bold",
+        "foreground": "#729de3"
+      },
+      // for auto
+      "type": {
+        "fontStyle": "bold",
+        "foreground": "#729de3"
+      },
+      "function": {
+        "foreground": "#e5b124"
+      },
+      "typeParameter": {
+        "foreground": "#729de3",
+        "fontStyle": "italic bold",
+      },
+      "variable": "#26cdca",
+      "variable.static": {
+        "foreground": "#8f5daf",
+        "fontStyle": "bold"
+      },
+      "enum": {
+        "fontStyle": "bold",
+        "foreground": "#729de3"
+      },
+      "enumMember": "#397797",
+      "macro": {
+        "foreground": "#8f5daf",
+        "fontStyle": "bold"
+      },
+      "method": {
+        "foreground": "#e5b124",
+        "fontStyle": "underline"
+      },
+      // 只读量加粗
+      "*.readonly": {
+        "fontStyle": "bold"
+      },
+      // 只读量等效为宏
+      "*.fileScope": {
+        "foreground": "#8f5daf",
+        "fontStyle": "bold"
+      },
+      "comment": "#505050",
+      "namespace": {
+        "foreground": "#289c6e",
+        "fontStyle": "bold"
+      },
+      "property": {
+        "foreground": "#7ca6b7",
+        "fontStyle": "underline"
+      },
+    }
+  },
+  "vim.sneak": true,
+  "ccls.index.trackDependency": 0,
+  "ccls.clang.resourceDir": "/opt/llvm/",
+  "ccls.index.threads": 8,
+  "ccls.cache.directory": "/home/xiaoju/.cache/ccls/",
+  "ccls.misc.compilationDatabaseDirectory": "${workspaceFolder}",
+  "ccls.highlight.function.face": [
+    "enabled"
+  ],
+  "ccls.highlight.type.face": [
+    "enabled"
+  ],
+  "ccls.highlight.variable.face": [
+    "enabled"
+  ],
+  "ccls.highlight.member": [
+    "fontStyle: italic"
+  ],
+  "ccls.highlight.static": [
+    "fontWeight: bold"
+  ],
+  "ccls.highlight.memberFunction.face": [
+    "function",
+    "member"
+  ],
+  "ccls.highlight.memberVariable.face": [
+    "variable",
+    "member"
+  ],
+  "ccls.highlight.staticMemberFunction.face": [
+    "function",
+    "static"
+  ],
+  "ccls.highlight.staticMemberVariable.face": [
+    "variable",
+    "static"
+  ],
+  "ccls.highlight.function.colors": [
+    "#e5b124",
+    "#927754",
+    "#eb992c",
+    "#e2bf8f",
+    "#d67c17",
+    "#88651e",
+    "#e4b953",
+    "#a36526",
+    "#b28927",
+    "#d69855"
+  ],
+  "ccls.highlight.type.colors": [
+    "#e1afc3",
+    "#d533bb",
+    "#9b677f",
+    "#e350b6",
+    "#a04360",
+    "#dd82bc",
+    "#de3864",
+    "#ad3f87",
+    "#dd7a90",
+    "#e0438a"
+  ],
+  "ccls.highlight.variable.colors": [
+    "#587d87",
+    "#26cdca",
+    "#397797",
+    "#57c2cc",
+    "#306b72",
+    "#6cbcdf",
+    "#368896",
+    "#3ea0d2",
+    "#48a5af",
+    "#7ca6b7"
+  ],
+  "ccls.highlight.macro.colors": [
+    "#e79528",
+    "#c5373d",
+    "#e8a272",
+    "#d84f2b",
+    "#a67245",
+    "#e27a33",
+    "#9b4a31",
+    "#b66a1e",
+    "#e27a71",
+    "#cf6d49"
+  ],
+  "ccls.highlight.namespace.colors": [
+    "#429921",
+    "#58c1a4",
+    "#5ec648",
+    "#36815b",
+    "#83c65d",
+    "#417b2f",
+    "#43cc71",
+    "#7eb769",
+    "#58bf89",
+    "#3e9f4a"
+  ],
+  "C_Cpp.autocomplete": "Disabled",
+  "C_Cpp.formatting": "Disabled",
+  "C_Cpp.errorSquiggles": "Disabled",
+  "C_Cpp.intelliSenseEngine": "Disabled",
+"ccls.launch.command": "ccls",
+"remote.SSH.remoteServerListenOnSocket": true,
+}
