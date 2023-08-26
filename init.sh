@@ -6,8 +6,7 @@ ln -s -f $cur_path/tmux/tmux.conf $HOME/.tmux.conf
 ln -s -f $cur_path/tmux/tmux.conf.local $HOME/.tmux.conf.local
 
 #zsh配置
-#mkdir -p $HOME/.ytrash #创建回收站
-#cp $cur_path/zsh/zshrc $HOME/.zshrc
+cp $cur_path/zsh/zshrc $HOME/.zshrc
 
 #vim配置
-cp $cur_path/vim/init.vim $HOME/.vimrc
+cp $cur_path/mini-vimrc/init.vim $HOME/.vimrc

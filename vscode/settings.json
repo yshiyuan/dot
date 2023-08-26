@@ -1,13 +1,4 @@
 {
-  "terminal.integrated.profiles.linux": {
-    "zsh": {
-      "path": "/usr/bin/zsh"
-    },
-  },
-  "terminal.integrated.defaultProfile.linux": "zsh",
-  "python.defaultInterpreterPath": "/usr/bin/python3",
-  "python.analysis.typeCheckingMode": "basic",
-  "python.languageServer": "Pylance",
   "editor.semanticTokenColorCustomizations": {
     "enabled": true,
     "rules": {
@@ -70,7 +61,6 @@
       },
     }
   },
-  "vim.sneak": true,
   "ccls.index.trackDependency": 0,
   "ccls.clang.resourceDir": "/opt/llvm/",
   "ccls.index.threads": 8,
@@ -171,6 +161,4 @@
   "C_Cpp.formatting": "Disabled",
   "C_Cpp.errorSquiggles": "Disabled",
   "C_Cpp.intelliSenseEngine": "Disabled",
-"ccls.launch.command": "ccls",
-"remote.SSH.remoteServerListenOnSocket": true,
 }
