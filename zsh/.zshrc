@@ -125,6 +125,21 @@ git config --global i18n.commit.encoding utf-8    # 提交信息编码
 git config --global i18n.logoutputencoding utf-8  # 输出 log 编码
 export LESSCHARSET=utf-8                          # 因为git log默认使用 less 分页，所以需要 bash 对 less 命令进行 utf-8 编码
 
+# http proxy
+if [[ $(uname -r) =~ WSL ]]; then
+    export proxyhost=$(cat /etc/resolv.conf | grep nameserver | awk '{ print $2 }')
+    echo "winhost: $proxyhost"
+fi
+function proxy(){
+    export http_proxy="$proxyhost:10809"
+    export https_proxy="$proxyhost:10809"
+    export no_proxy="127.0.0.1,$proxyhost"
+}
+function unproxy(){
+    unset http_proxy
+    unset https_proxy
+}
+
 source $ZSH/oh-my-zsh.sh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
