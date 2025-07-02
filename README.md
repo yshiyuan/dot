@@ -2,7 +2,7 @@
 
 ## 字体配置
 
-kitty 中不需要使用 nerd font，其内置有，自动生效。
+kitty 中不需要使用 nerd font，其内置有，自动生效。发现部分符号不能正常显示，还是使用symbol_map重新映射了一下。
 
 kitty 可通过 symbol_map 单独设置中文字体。
 
