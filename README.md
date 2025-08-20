@@ -33,3 +33,7 @@ Tokyo Night 系列
 ### remote server 中的 tmux 或 nvim 复制内容后，粘贴时出现之前复制的内容
 
 可能是因为 kitty 旧版本的 bug，将 kitty 更新到最新版本即可修复。
+
+## env 设置
+
+tmux 和 zshrc 中先将 TERM 设置为 xterm-256color，之前 tmux 设置为 screen-256color时，在旧的 ubuntu 版本下无法正常显示斜体字
