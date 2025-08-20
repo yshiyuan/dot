@@ -20,6 +20,10 @@ Catppuccin 系列
 
 Tokyo Night 系列
 
+## 使用注意事项
+
+1. kitty 全屏快捷键 ctrl+shift+f10
+
 ## 疑难问题
 
 ### tmux 或 nvim 无法复制内容到系统粘贴板
