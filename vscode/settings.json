@@ -1,4 +1,18 @@
 {
+  "clangd.arguments": [
+    "--query-driver=/usr/bin/g++",
+    "--all-scopes-completion",
+    "--background-index",
+    "--background-index-priority=normal",
+    "--clang-tidy",
+    "--completion-style=detailed",
+    "--function-arg-placeholders",
+    "--header-insertion=iwyu",
+    "--limit-references=0",
+    "--limit-results=0",
+    "-j=8",
+    "--pch-storage=memory"
+  ],
   "editor.semanticTokenColorCustomizations": {
     "enabled": true,
     "rules": {
@@ -21,7 +35,7 @@
       },
       "typeParameter": {
         "foreground": "#729de3",
-        "fontStyle": "italic bold",
+        "fontStyle": "italic bold"
       },
       "variable": "#26cdca",
       "variable.static": {
@@ -58,7 +72,7 @@
       "property": {
         "foreground": "#7ca6b7",
         "fontStyle": "underline"
-      },
+      }
     }
   },
   "ccls.index.trackDependency": 0,
@@ -66,37 +80,15 @@
   "ccls.index.threads": 8,
   "ccls.cache.directory": "/home/xiaoju/.cache/ccls/",
   "ccls.misc.compilationDatabaseDirectory": "${workspaceFolder}",
-  "ccls.highlight.function.face": [
-    "enabled"
-  ],
-  "ccls.highlight.type.face": [
-    "enabled"
-  ],
-  "ccls.highlight.variable.face": [
-    "enabled"
-  ],
-  "ccls.highlight.member": [
-    "fontStyle: italic"
-  ],
-  "ccls.highlight.static": [
-    "fontWeight: bold"
-  ],
-  "ccls.highlight.memberFunction.face": [
-    "function",
-    "member"
-  ],
-  "ccls.highlight.memberVariable.face": [
-    "variable",
-    "member"
-  ],
-  "ccls.highlight.staticMemberFunction.face": [
-    "function",
-    "static"
-  ],
-  "ccls.highlight.staticMemberVariable.face": [
-    "variable",
-    "static"
-  ],
+  "ccls.highlight.function.face": ["enabled"],
+  "ccls.highlight.type.face": ["enabled"],
+  "ccls.highlight.variable.face": ["enabled"],
+  "ccls.highlight.member": ["fontStyle: italic"],
+  "ccls.highlight.static": ["fontWeight: bold"],
+  "ccls.highlight.memberFunction.face": ["function", "member"],
+  "ccls.highlight.memberVariable.face": ["variable", "member"],
+  "ccls.highlight.staticMemberFunction.face": ["function", "static"],
+  "ccls.highlight.staticMemberVariable.face": ["variable", "static"],
   "ccls.highlight.function.colors": [
     "#e5b124",
     "#927754",
@@ -157,8 +149,8 @@
     "#58bf89",
     "#3e9f4a"
   ],
-  "C_Cpp.autocomplete": "Disabled",
-  "C_Cpp.formatting": "Disabled",
-  "C_Cpp.errorSquiggles": "Disabled",
-  "C_Cpp.intelliSenseEngine": "Disabled",
+  "C_Cpp.autocomplete": "disabled",
+  "C_Cpp.errorSquiggles": "disabled",
+  "C_Cpp.formatting": "disabled",
+  "C_Cpp.intelliSenseEngine": "disabled"
 }
