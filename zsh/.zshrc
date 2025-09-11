@@ -5,7 +5,13 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-export TERM=xterm-256color
+# do yo need to set it, unless necessary
+#if [[ -n "$TMUX" ]]; then
+#  export TERM=tmux-256color
+#else
+#  export TERM=xterm-256color
+#fi
+
 
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/.local/bin:$PATH
