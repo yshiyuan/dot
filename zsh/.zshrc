@@ -107,6 +107,20 @@ export LANG=en_US.UTF-8
 #   export EDITOR='mvim'
 # fi
 
+
+# do yo need to set it, unless necessary
+#if [[ -n "$TMUX" ]]; then
+#  export TERM=tmux-256color
+#else
+#  export TERM=xterm-256color
+#fi
+
+# It is required by snacks.nvim terminal, otherwise the terminal will not work properly
+if [[ -n "$NVIM" ]]; then
+    export TERM=xterm-256color
+fi
+
+
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
