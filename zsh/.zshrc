@@ -95,6 +95,32 @@ plugins=(
 
 # User configuration
 
+function prompt_is_in_docker() {
+  # 检查 /.dockerenv 文件是否存在
+  if [[ -f "/.dockerenv" ]]; then
+    return 0
+  fi
+
+  # 检查 /proc/1/cgroup 是否包含 docker 相关信息
+  if grep -q '/docker/' /proc/1/cgroup 2>/dev/null; then
+    return 0
+  fi
+
+  # 检查 /proc/1/cpuset 是否包含 docker 相关信息
+  if grep -q '/docker/' /proc/1/cpuset 2>/dev/null; then
+    return 0
+  fi
+
+  # 检查进程调度信息
+  local sched_info=$(head -1 /proc/1/sched 2>/dev/null)
+  if [[ -n "$sched_info" && ! "$sched_info" =~ "1, #threads: 1" ]]; then
+    return 0
+  fi
+
+  # 如果以上条件都不满足，则不在 Docker 中
+  return 1
+}
+
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
