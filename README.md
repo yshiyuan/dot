@@ -14,7 +14,7 @@ Gnome 和 浏览器都需要配置中文字体，否则“复”字等不能正�
 
 可尝试字体 Maple Mono
 
-## 主题配置
+## 主题推荐
 
 Catppuccin 系列
 
@@ -23,6 +23,14 @@ Tokyo Night 系列
 ## 使用注意事项
 
 1. kitty 全屏快捷键 ctrl+shift+f10
+
+## env 设置
+
+tmux 中 TERM 为 tmux-256color
+zshrc 中 TERM 为 xterm-256color
+nvim 中的 TERM 需要设置为 xterm-256color
+
+当设置不正确，可能无法正常显示
 
 ## 疑难问题
 
@@ -34,6 +42,6 @@ Tokyo Night 系列
 
 可能是因为 kitty 旧版本的 bug，将 kitty 更新到最新版本即可修复。
 
-## env 设置
+### tmux 中无法正常显示红色波浪下划线
 
-tmux 和 zshrc 中先将 TERM 设置为 xterm-256color，之前 tmux 设置为 screen-256color时，在旧的 ubuntu 版本下无法正常显示斜体字
+参考 <https://github.com/folke/tokyonight.nvim#fix-undercurls-in-tmux>
