@@ -45,3 +45,7 @@ nvim 中的 TERM 需要设置为 xterm-256color
 ### tmux 中无法正常显示红色波浪下划线
 
 参考 <https://github.com/folke/tokyonight.nvim#fix-undercurls-in-tmux>
+
+### tmux 与 kitty 兼容性问题
+
+会导致 neovim 执行 checkhealth 的输出，行尾出现奇怪的字符
