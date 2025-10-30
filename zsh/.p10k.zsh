@@ -57,7 +57,7 @@ function prompt_is_in_docker() {
 # 自定义 Docker 指示器段
 function prompt_my_docker_indicator() {
   if prompt_is_in_docker; then
-    p10k segment -f 196 -i '🐳' -t "docker"
+    p10k segment -f 196 -i '🐳' -t " ${DOCKER_NAME:-docker}"
   fi
 }
 
