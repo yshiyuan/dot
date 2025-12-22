@@ -12,11 +12,11 @@ Gnome 和 浏览器都需要配置中文字体，否则“复”字等不能正�
 
 中文字体推荐 Noto Sans CJK SC
 
-可尝试字体 Maple Mono
+可尝试字体 Maple Mono，Maple 的 nerd font 不好用，使用不带 nerd font 的版本
 
 ## 主题推荐
 
-Catppuccin 系列
+Catppuccin 系列 Mocha
 
 Tokyo Night 系列
 
