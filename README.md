@@ -30,7 +30,7 @@ tmux 中 TERM 为 tmux-256color
 zshrc 中 TERM 为 xterm-256color
 nvim 中的 TERM 需要设置为 xterm-256color
 
-当设置不正确，可能无法正常显示
+这是最不容易出错的配置，当设置不正确，可能无法正常显示。
 
 ## 疑难问题
 
