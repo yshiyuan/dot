@@ -1,6 +1,6 @@
 backtraces_path = "/home/plusai/tmp/neovide_backtraces.log" # see below for the default platform specific location
 fork = true
-frame = "full"
+frame = "none"
 idle = true
 mouse-cursor-icon = "arrow"
 no-multigrid = false
@@ -10,10 +10,6 @@ title-hidden = true
 vsync = true
 wsl = false
 opengl = true
-
-[font]
-normal = ["Maple Mono NL NF CN"]
-size = 12.0
 
 [box-drawing]
 # "font-glyph", "native" or "selected-native"
